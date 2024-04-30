@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="purdue.svg" type="image/png">
+    <title>CIT 312 Final</title>
+    <style>
+        .navbar.custom-navbar, .collapse.custom-collapse {
+            background-color: #CEB888; /* This sets the navbar and expandable menu color */
+        }
+        .navbar.custom-navbar {
+            background-color: #CEB888 !important; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .navbar-toggler {
+            border: none; 
+        }
+        .navbar-brand {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center; 
+            color: white; 
+        }
+        body{
+            background-color: #000000;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    transform-style: preserve-3d;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 80px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.container .box .body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease;
+}
+
+
+
+img, .imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+
+}
+
+.container .box .body .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    background: #333;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.container .box:hover .body{
+    transform: rotateY(180deg);
+}
+
+.container .box .body .content div{
+    transform-style: preserve-3d;
+    margin: 8px;
+    background: linear-gradient(45deg, #CEB888,#CEB888);
+    transform: translateZ(100px);
+    font-size: small;
+    color: black;
+
+
+}
+
+h3{
+    color: black;
+    font-size: medium;
+
+}
+.card-title, .card-text{
+    color: white;
+    background-color: #000000;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light custom-navbar" style="background-color: #CEB888 !important;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <header style="text-align: center; background-color: #CEB888; color: black; font-size: 30px;">Applied Computing Concentrations</header>
+
+    <!-- Hamburger menu -->
+    <div class="collapse custom-collapse" id="navbarToggleExternalContent2" style="background-color: #CEB888 !important;">
+        <div class="bg-light p-4">
+            <a href="index.html" class="btn btn-link btn-block border-bottom m-0" style="color: #000000; text-decoration: none;">Home</a>
+            <a href="jobs.html" class="btn btn-link btn-block border-bottom m-0" style="color: #000000; text-decoration: none;">Jobs</a>
+            <a href="quiz.html" class="btn btn-link btn-block m-0" style="color: #000000; text-decoration: none;">Quiz</a>
+
+        </div>
+    </div>
+
+    <div class="container d-flex align-items-center justify-content-center flex-wrap">
+
+         <!-- CARD ONE -->
+
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="https://www.purdue.edu/home/wp-content/uploads/2023/07/Founders-Park-DSC3463.jpg" alt="question1">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Question One</h5>
+                    <p class="card-text">
+                      When was Purdue Established?
+                    </p>
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3>May 6, 1869</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD TWO -->
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="https://www.jconline.com/gcdn/presto/2020/02/03/PLAI/82ce5e26-a918-4573-9950-aa8c53ab082d-AP20032634358146.jpg" alt="question2">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Question Two</h5>
+                    <p class="card-text">
+                        what is Purdue's mascot?
+                    </p>
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3>Purdue Pete</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD THREE -->
+
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="https://stories.purdue.edu/app/uploads/2022/07/TopBuildings-ContentHub-Hero.jpg" alt="question3">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Question Three</h5>
+                    <p class="card-text">
+                        How many World Food Prize
+                        Winners have come from
+                        Purdue?
+                    </p>
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3>Two</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD  FOUR-->
+
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="https://www.appily.com/sites/default/files/styles/max_1200/public/images/hero/college/243780_hero.jpg?itok=a6J-xXil" alt="question4">
+
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Question Four</h5>
+                    <p class="card-text">
+                        Who was Purdue’s most
+                        recent NBA player?
+                    </p>
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3>Robbie Hummel</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- CARD FIVE -->
+
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="https://www.purdue.edu/president/wp-content/uploads/2023/09/strategic-initiatives-storyline.jpg" alt="question5">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Question Five</h5>
+                    <p class="card-text">
+                      Free
+                    </p>
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3>Palestine</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD SIX -->
+
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="https://www.wur.nl/upload/795eebb2-01cf-44af-9fbc-460a45c9b62c_Campus%20Purdue%20university.jpg" alt="question6">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Question Six</h5>
+                    <p class="card-text">
+                      Who is the most famous person that graduated from Purdue?
+                    </p>
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3>Neil Armstrong</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- CARD Seven -->
+    <div class="box">
+        <div class="body">
+            <div class="imgContainer">
+                <img src="https://res.cloudinary.com/simpleview/image/upload/v1588189356/clients/westlafayettein/TrevorMahlmann6_43e3f02a-da63-4254-8ac1-1acf23a0215e.jpg" alt="question6">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Question Seven</h5>
+                <p class="card-text">
+                    How many Purdue Graduates
+                    have gone on to become
+                    astronauts?
+                </p>
+            </div>
+            <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div>
+                    <h3> Twenty-three</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CARD Eight -->
+    <div class="box">
+        <div class="body">
+            <div class="imgContainer">
+                <img src="https://enneadweb.s3.amazonaws.com/work-images/1766_Purdue-Chaney-Hale/_md/1766_PurdueChaneyHale-16.jpg" alt="question6">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Question Eight</h5>
+                <p class="card-text">
+                    Purdue Pete originally
+                    began as the mascot for
+                </p>
+            </div>
+            <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div>
+                    <h3>University Bookstore
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD Nine -->
+    <div class="box">
+        <div class="body">
+            <div class="imgContainer">
+                <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/westlafayettein/TrevorMahlmann130-d6e9d174be9e9f1_d6e9d2b9-ecdc-9dda-a9e99f65a7d316ee.jpg" alt="question6">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Question Nine</h5>
+                <p class="card-text">
+                    Purdue adopted Gold and
+                    Black as the school colors in
+                    what year?
+                </p>
+            </div>
+            <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div>
+                    <h3>1887</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CARD Ten -->
+    <div class="box">
+        <div class="body">
+            <div class="imgContainer">
+                <img src="https://bloximages.newyork1.vip.townnews.com/purdueexponent.org/content/tncms/assets/v3/editorial/f/71/f71a8a6c-cc3a-11ee-8370-1378cff4dae4/65ce6a2c1a2e5.image.jpg?resize=750%2C500" alt="question6">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Question Ten</h5>
+                <p class="card-text">
+                    What are Purdue's colors?
+                </p>
+            </div>
+            <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div>
+                    <h3>Old Gold and Black</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    
+
+
+</body>
+</html>

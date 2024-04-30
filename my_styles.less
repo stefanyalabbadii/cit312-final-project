@@ -1,0 +1,16 @@
+@purdue-gold: #CEB888;
+@purdue-black: #000000;
+@text-color: #ffffff;
+
+.navbar.custom-navbar {
+    background-color: @purdue-gold;
+    .navbar-toggler {
+        border-color: lighten(@purdue-gold, 10%);
+    }
+}
+
+.card {
+    background-color: @purdue-black;
+    color: @text-color;
+    height: 650px; // You can use variables for dimensions too, if needed
+}
